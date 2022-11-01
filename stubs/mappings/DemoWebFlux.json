@@ -1,0 +1,39 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/person/54321",
+        "headers": {
+          "Content-Type": {
+            "equalTo": "application/json"
+          }
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/person/12345",
+        "headers": {
+          "Content-Type": {
+            "equalTo": "application/json"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "PersonOkResp.json",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
